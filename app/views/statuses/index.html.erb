@@ -1,5 +1,7 @@
 <div class="page-header"><h1> All Statuses </h1></div>
 
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %> <br />
+
 <%= link_to "Post a New Status", new_status_path, class: "btn btn-default" %>
 
 <% @statuses.each do |status| %>
@@ -18,3 +20,4 @@
 
 </div>
 <% end %>
+
